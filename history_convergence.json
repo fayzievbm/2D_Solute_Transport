@@ -1,0 +1,101 @@
+{
+  "complete": true,
+  "target_peak_normalized_difference": 0.002,
+  "cases": {
+    "constant": {
+      "c": {
+        "maximum_difference_over_fine_peak": 0.00010350752318810117,
+        "maximum_absolute_difference": 7.390387797307635e-07,
+        "time_of_maximum_s": 14.094202856653338,
+        "rms_over_fine_peak": 8.284472968825674e-06,
+        "first_30min_difference_over_peak": 0.00010350752318810117
+      },
+      "ca": {
+        "maximum_difference_over_fine_peak": 1.5865378019934296e-05,
+        "maximum_absolute_difference": 5.2594468446208464e-08,
+        "time_of_maximum_s": 10792.0,
+        "rms_over_fine_peak": 1.1719964556132561e-05,
+        "first_30min_difference_over_peak": 1.2085796887192237e-05
+      },
+      "cp": {
+        "maximum_difference_over_fine_peak": 1.2566082151829056e-05,
+        "maximum_absolute_difference": 1.0052865721463244e-07,
+        "time_of_maximum_s": 14776.0,
+        "rms_over_fine_peak": 7.808657165612637e-06,
+        "first_30min_difference_over_peak": 1.946296131070035e-06
+      }
+    },
+    "variable": {
+      "c": {
+        "maximum_difference_over_fine_peak": 6.801889675555683e-05,
+        "maximum_absolute_difference": 4.334059306003186e-07,
+        "time_of_maximum_s": 22.325109652763413,
+        "rms_over_fine_peak": 1.2870884859257229e-05,
+        "first_30min_difference_over_peak": 6.801889675555683e-05
+      },
+      "ca": {
+        "maximum_difference_over_fine_peak": 1.7094312266129085e-05,
+        "maximum_absolute_difference": 4.9963767894496344e-08,
+        "time_of_maximum_s": 10248.0,
+        "rms_over_fine_peak": 1.2504287950961077e-05,
+        "first_30min_difference_over_peak": 1.226302526039898e-05
+      },
+      "cp": {
+        "maximum_difference_over_fine_peak": 1.2010281522241949e-05,
+        "maximum_absolute_difference": 9.608225217793559e-08,
+        "time_of_maximum_s": 15352.0,
+        "rms_over_fine_peak": 8.186563381990288e-06,
+        "first_30min_difference_over_peak": 1.8451110699060328e-06
+      }
+    },
+    "exp_0.001": {
+      "c": {
+        "maximum_difference_over_fine_peak": 3.884720931393051e-05,
+        "maximum_absolute_difference": 2.7725968633355094e-07,
+        "time_of_maximum_s": 799.9999999999997,
+        "rms_over_fine_peak": 5.576153941342202e-06,
+        "first_30min_difference_over_peak": 3.884720931393051e-05
+      },
+      "ca": {
+        "maximum_difference_over_fine_peak": 1.8998401543932555e-05,
+        "maximum_absolute_difference": 6.268528477808852e-08,
+        "time_of_maximum_s": 1904.0,
+        "rms_over_fine_peak": 6.702242968085473e-06,
+        "first_30min_difference_over_peak": 1.8441968601034504e-05
+      },
+      "cp": {
+        "maximum_difference_over_fine_peak": 2.3251349953664095e-05,
+        "maximum_absolute_difference": 1.8601079962931276e-07,
+        "time_of_maximum_s": 3688.0,
+        "rms_over_fine_peak": 8.163226447842475e-06,
+        "first_30min_difference_over_peak": 1.9227383414242816e-05
+      }
+    },
+    "exp_0.0005": {
+      "c": {
+        "maximum_difference_over_fine_peak": 3.0143831308252612e-05,
+        "maximum_absolute_difference": 2.150613547754511e-07,
+        "time_of_maximum_s": 952.0,
+        "rms_over_fine_peak": 5.123833638541373e-06,
+        "first_30min_difference_over_peak": 3.0143831308252612e-05
+      },
+      "ca": {
+        "maximum_difference_over_fine_peak": 2.074622073608942e-05,
+        "maximum_absolute_difference": 6.811243191982624e-08,
+        "time_of_maximum_s": 4072.0,
+        "rms_over_fine_peak": 8.002252609157723e-06,
+        "first_30min_difference_over_peak": 1.4744586164374288e-05
+      },
+      "cp": {
+        "maximum_difference_over_fine_peak": 2.607024514339083e-05,
+        "maximum_absolute_difference": 2.0856196114712663e-07,
+        "time_of_maximum_s": 6096.0,
+        "rms_over_fine_peak": 9.287777728174423e-06,
+        "first_30min_difference_over_peak": 1.5268658539566876e-05
+      }
+    }
+  },
+  "maximum_difference_over_fine_peak": 0.00010350752318810117,
+  "passed": true,
+  "interpretation": "Fixed physical point (0.05,0.4) m, 0-15 h. Coarse history linearly interpolated onto fine history. Startup samples are approximately 1 s apart; after 800 s both are sampled every 8 s, with additional exact figure-time samples. Includes sampling/interpolation effects. Does not establish all pointwise startup errors near the inlet."
+}

@@ -1,0 +1,12 @@
+{
+  "mesh2_dt2": {
+    "status": "stopped during startup; no completed result",
+    "reason": "Replaced by identical solver with 8 Numba threads after speed and array-equivalence benchmark.",
+    "replacement": "mesh2_dt2_t8"
+  },
+  "mesh2_dt4": {
+    "status": "stopped during startup; no completed result",
+    "reason": "Same thread-count optimization; no physical or numerical equation change.",
+    "replacement": "mesh2_dt4_t8"
+  }
+}

@@ -1,0 +1,33 @@
+Figure 2. Pressure surfaces at 0.5 h (a) and 5 h (b), with ambient downstream pressure 100 kPa and inlet pressure 500 kPa.
+
+Figure 3. Pressure contours at 0.5 h (a) and 5 h (b). The displayed interval is 0-4 m; the downstream numerical boundary is at 64 m.
+
+Figure 4. Pressure cross sections at t = 0.5 h: longitudinal profiles at selected y coordinates (a) and transverse profiles at selected x coordinates (b).
+
+Figure 5. Pressure cross sections at t = 5 h: longitudinal profiles at selected y coordinates (a) and transverse profiles at selected x coordinates (b).
+
+Figure 6. Concentration surfaces at 15 h for constant inlet and constant dispersion. The displayed x interval is 0-2 m; the computation extends to 64 m.
+
+Figure 7. Cross sections at 15 h for constant dispersion and constant inlet concentration. Dissolved concentration c (a,b), adsorbed concentration ca (c,d), and adsorbed concentration cp (e,f). Left panels show longitudinal profiles; right panels show transverse profiles. The coordinate legends in (a) and (b) apply to all rows.
+
+Figure 8. Concentration surfaces at 15 h for exponential inlet with phi = 0.001 s^-1 and constant dispersion. The displayed x interval is 0-2 m; the computation extends to 64 m.
+
+Figure 9. Cross sections of c at 15 h under exponential inlet histories with phi = 0.001 s^-1 (a,b) and 0.0005 s^-1 (c,d), using constant dispersion. Left panels show longitudinal profiles; right panels show transverse profiles.
+
+Figure 10. Cross sections of c at 2 h under exponential inlet histories with phi = 0.001 s^-1 (a,b) and 0.0005 s^-1 (c,d), using constant dispersion. Left panels show longitudinal profiles; right panels show transverse profiles.
+
+Figure 11. Cross sections of ca at 2 h under exponential inlet histories with phi = 0.001 s^-1 (a,b) and 0.0005 s^-1 (c,d), using constant dispersion. Left panels show longitudinal profiles; right panels show transverse profiles.
+
+Figure 12. Cross sections of cp at 2 h under exponential inlet histories with phi = 0.001 s^-1 (a,b) and 0.0005 s^-1 (c,d), using constant dispersion. Left panels show longitudinal profiles; right panels show transverse profiles.
+
+Figure 13. Time evolution at (x,y) = (0.05,0.4) m for constant and exponential inlet histories. All histories are sampled at this same physical point.
+
+Figure 14. Variable-dispersion concentration surfaces under constant inlet concentration at 2 h (green) and 15 h (blue).
+
+Figure 15. Comparison of constant anisotropic dispersion and spatially variable scalar dispersion under constant inlet concentration at 15 h. Blue: constant dispersion. Orange: variable dispersion.
+
+Figure 16. Cross sections at 15 h for variable dispersion and constant inlet concentration. Dissolved concentration c (a,b), adsorbed concentration ca (c,d), and adsorbed concentration cp (e,f). Left panels show longitudinal profiles; right panels show transverse profiles. The coordinate legends in (a) and (b) apply to all rows.
+
+All figures use the fixed 0.04 m inlet, the 64 m numerical domain, and the convergence-tested inlet-focused mesh. Pressure is integrated by an unsplit adaptive implicit BDF/NDF solver. A smooth geometric transport-step ramp is followed by a 2 s step after 800 s. Pressure is absolute pressure; c0=0.01, and the sorbed concentrations are multiplied by 1000 for display without changing their supplied concentration basis. No additional mass unit is assumed. Boundary values are algebraic and are excluded from storage integrals. See Verification_report.txt for measured spatial, temporal and domain changes and their limits.
+
+Profiles at symmetric y coordinates overlap: y=0 and 0.8 m, and y=0.2 and 0.6 m. All specified profiles are included.

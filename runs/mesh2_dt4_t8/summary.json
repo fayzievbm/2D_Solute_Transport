@@ -1,0 +1,184 @@
+{
+  "parameters": {
+    "L": 64.0,
+    "H": 0.8,
+    "dx": 0.00078125,
+    "dy": 0.000625,
+    "dt": 4.0,
+    "duration": 54000.0,
+    "p_ambient": 100000.0,
+    "p_inlet": 500000.0,
+    "permeability_x": 5e-14,
+    "permeability_y": 1e-14,
+    "viscosity": 0.001,
+    "storage": 1e-08,
+    "porosity": 0.3,
+    "c_inlet": 0.01,
+    "D_x": 5e-05,
+    "D_y": 1e-05,
+    "D0": 1e-05,
+    "omega_D": 1.0,
+    "capacity_a": 0.004,
+    "capacity_p": 0.008,
+    "transition_a": 0.0002,
+    "transition_p": 0.003,
+    "beta_ar": 3e-05,
+    "beta_aa": 2.5e-05,
+    "beta_ad": 3e-05,
+    "beta_p0": 7.5e-05,
+    "lambda_c": 1e-05,
+    "lambda_a": 2e-05,
+    "lambda_p": 1.5e-05,
+    "inlet_mode": "fixed_width",
+    "inlet_width": 0.04
+  },
+  "scenario_names": [
+    "constant",
+    "variable",
+    "exp_0.001",
+    "exp_0.0005"
+  ],
+  "actual_transport_steps": 15425,
+  "snapshot_steps": {
+    "0": 0.0,
+    "450": 1800.0,
+    "900": 3600.0,
+    "1800": 7200.0,
+    "4500": 18000.0,
+    "13500": 54000.0
+  },
+  "snapshot_key_definition": "Requested physical time divided by subsequent transport dt; not the actual step count during startup.",
+  "mesh": {
+    "level": 2,
+    "nx": 1013,
+    "ny": 489,
+    "min_dx": 0.0007812499999999972,
+    "max_dx": 0.20000000000000284,
+    "min_dy": 0.0006068067101425711,
+    "max_dy": 0.0025000000000000577
+  },
+  "effective_inlet_width": 0.03999999999999959,
+  "inventory_area": 51.131226195201506,
+  "time_integration": {
+    "pressure": "Unsplit BDF/NDF, variable order 1-5, structured full-matrix linear solves",
+    "pressure_rtol": 1e-07,
+    "pressure_atol_Pa": 1e-07,
+    "transport": "Conservative two-stage ADI with physical midpoint x velocity and endpoint y velocities; unchanged projected kinetic increments.",
+    "startup_end_s": 800.0,
+    "startup_growth": 1.005,
+    "initial_step_s": 9.981357151616075e-05,
+    "last_startup_step_s": 3.9801988194740634,
+    "subsequent_step_s": 4.0
+  },
+  "pressure": {
+    "min_gauge_pressure": -3.034429132354849e-24,
+    "max_gauge_pressure": 399861.63660282537,
+    "adaptive_steps": 1017,
+    "max_storage_integral_residual": 1.6647860312524188e-09,
+    "max_relative_storage_integral_residual_after_1s": 3.055736700118746e-08,
+    "nlu": 175,
+    "nfev": 2036
+  },
+  "transport": {
+    "constant": {
+      "inventory": 0.0026195072224942514,
+      "cumulative_in": 0.003908240849713208,
+      "cumulative_out": 5.062272278950098e-148,
+      "cumulative_degradation": 0.0012887336272110117,
+      "final_residual": -7.945033519973776e-15,
+      "max_cumulative_residual": 8.032203374641611e-15,
+      "relative_max_cumulative_residual": 2.0551966174835475e-12,
+      "max_half_step_residual": 7.221489406838007e-19,
+      "min_c": -2.7365864438337e-304,
+      "max_c": 0.009948354667284614,
+      "capacity_projection_count": 14057,
+      "max_ca": 0.004,
+      "max_cp": 0.008
+    },
+    "variable": {
+      "inventory": 0.0033952265811384576,
+      "cumulative_in": 0.005065973314289275,
+      "cumulative_out": 5.320788340492352e-266,
+      "cumulative_degradation": 0.001670746733141068,
+      "final_residual": -9.749362775424153e-15,
+      "max_cumulative_residual": 9.528402372671607e-15,
+      "relative_max_cumulative_residual": 1.880863119786959e-12,
+      "max_half_step_residual": 7.149971371076672e-19,
+      "min_c": -5.533844646226815e-304,
+      "max_c": 0.009914498006871952,
+      "capacity_projection_count": 15752,
+      "max_ca": 0.004,
+      "max_cp": 0.008
+    },
+    "exp_0.001": {
+      "inventory": 0.0025840038424500837,
+      "cumulative_in": 0.003823973585239863,
+      "cumulative_out": 9.587833063991244e-149,
+      "cumulative_degradation": 0.001239969742782006,
+      "final_residual": -7.773295895852073e-15,
+      "max_cumulative_residual": 7.87824666614867e-15,
+      "relative_max_cumulative_residual": 2.0602251795247422e-12,
+      "max_half_step_residual": 4.704473928609587e-19,
+      "min_c": -2.0021076306363652e-304,
+      "max_c": 0.009948304703181369,
+      "capacity_projection_count": 13602,
+      "max_ca": 0.004,
+      "max_cp": 0.008
+    },
+    "exp_0.0005": {
+      "inventory": 0.0025507478759165393,
+      "cumulative_in": 0.0037475430438901067,
+      "cumulative_out": 5.3070010003184035e-149,
+      "cumulative_degradation": 0.0011967951679656486,
+      "final_residual": -7.918795827399627e-15,
+      "max_cumulative_residual": 7.732746734601115e-15,
+      "relative_max_cumulative_residual": 2.063417723035464e-12,
+      "max_half_step_residual": 4.697062390321112e-19,
+      "min_c": -3.1413625931793217e-304,
+      "max_c": 0.009948256057769982,
+      "capacity_projection_count": 13159,
+      "max_ca": 0.004,
+      "max_cp": 0.008
+    }
+  },
+  "floating_point": {
+    "main": {
+      "enabled": true,
+      "normal_min": 2.2250738585072014e-308,
+      "control_word": 17301535,
+      "scope": "current simulation thread only"
+    },
+    "workers": {
+      "enabled": true,
+      "workers": 8,
+      "saved_control_words": [
+        524319,
+        524319,
+        524319,
+        524319,
+        524319,
+        524319,
+        524319,
+        524319
+      ],
+      "normal_min": 2.2250738585072014e-308,
+      "scope": "simulation worker threads; restored on exit"
+    }
+  },
+  "elapsed_seconds": 2046.171179799945,
+  "code_hashes": {
+    "corrected_solver.py": "f304ad01dce0e81e62cfc60ddce689a8b3303a1a38a812bb9a1c0c495f66e4c7",
+    "pressure_implicit.py": "c9ba137f907289859684a7eb59ad731eeb488779dd775fd1540de53cc0e4028f",
+    "blocked_solver.py": "be3d38b68a16dc3ee0418e0b882b7284d33bed8b594b7c7c914ec71ea6657d0b",
+    "blocked_transport.py": "768dfc80983009b4ace365d62a9650d5fe9655f1ebac7151564a8789642e3a6f",
+    "blocked_base.py": "5998599bd077f5ce51ad40fdd09854436ba3b9bc918014a56c9956c95cc38ca2",
+    "reference_solver.py": "eaf91563af082d4e397a1eef564eaaf9c68bd16f121e1e3b58ae6c554afeae69",
+    "floating_point.py": "f16be2390a501bf4a093bb599bff4329fccdd9d0f3efb8dae4d684e8459d1987",
+    "worker_floating_point.py": "8b04c01816673fd9fa53745d41a73df57baedb26dafceeeb3a67d92b0a498b03",
+    "run.py": "3d40c8b8cc118ad1420c017324cabcc839d82a61601b96e6d60e0cbc7e768e61"
+  },
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "2",
+    "NUMBA_NUM_THREADS": "8"
+  }
+}

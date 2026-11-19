@@ -1,0 +1,22 @@
+[
+  {
+    "threads": 1,
+    "seconds_per_four_case_step": 0.4668908583407756,
+    "max_state_difference_to_single_thread": 0.0
+  },
+  {
+    "threads": 2,
+    "seconds_per_four_case_step": 0.27294740833652514,
+    "max_state_difference_to_single_thread": 0.0
+  },
+  {
+    "threads": 4,
+    "seconds_per_four_case_step": 0.17416951666624905,
+    "max_state_difference_to_single_thread": 0.0
+  },
+  {
+    "threads": 8,
+    "seconds_per_four_case_step": 0.12415661666697513,
+    "max_state_difference_to_single_thread": 0.0
+  }
+]

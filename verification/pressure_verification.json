@@ -1,0 +1,61 @@
+{
+  "operator_agreement": 1.7921265224565066e-16,
+  "linear_solves": {
+    "1e-06": {
+      "relative_difference_to_sparse_LU": 1.0874549873671677e-15,
+      "relative_residual": 1.0848732171783237e-15
+    },
+    "0.1": {
+      "relative_difference_to_sparse_LU": 1.2319000126910913e-15,
+      "relative_residual": 1.3988064915588035e-15
+    },
+    "10.0": {
+      "relative_difference_to_sparse_LU": 2.8013553242459113e-14,
+      "relative_residual": 3.4514045872387126e-14
+    },
+    "10000.0": {
+      "relative_difference_to_sparse_LU": 2.776580346155195e-13,
+      "relative_residual": 1.786208567930919e-13
+    }
+  },
+  "time_integration": [
+    {
+      "time_s": 1e-05,
+      "relative_L2_to_matrix_exponential": 2.756821203451386e-12,
+      "max_Pa_difference_to_sparse_BDF": 2.5849394142282115e-26
+    },
+    {
+      "time_s": 0.001,
+      "relative_L2_to_matrix_exponential": 4.663023686794316e-11,
+      "max_Pa_difference_to_sparse_BDF": 3.637978807091713e-12
+    },
+    {
+      "time_s": 0.1,
+      "relative_L2_to_matrix_exponential": 2.4494297999654774e-09,
+      "max_Pa_difference_to_sparse_BDF": 5.820766091346741e-11
+    },
+    {
+      "time_s": 1.0,
+      "relative_L2_to_matrix_exponential": 1.446355823156074e-09,
+      "max_Pa_difference_to_sparse_BDF": 1.7462298274040222e-10
+    },
+    {
+      "time_s": 10.0,
+      "relative_L2_to_matrix_exponential": 8.46755123560047e-10,
+      "max_Pa_difference_to_sparse_BDF": 2.9103830456733704e-10
+    },
+    {
+      "time_s": 100.0,
+      "relative_L2_to_matrix_exponential": 5.691797784785777e-10,
+      "max_Pa_difference_to_sparse_BDF": 5.529727786779404e-10
+    }
+  ],
+  "pressure_stats": {
+    "min_gauge_pressure": -4.047248723058229e-33,
+    "max_gauge_pressure": 388469.3104038374,
+    "adaptive_steps": 686,
+    "max_storage_integral_residual": 1.3827806087662875e-12,
+    "max_relative_storage_integral_residual_after_1s": 4.338462516056004e-09
+  },
+  "passed": true
+}

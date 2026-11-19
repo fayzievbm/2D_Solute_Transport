@@ -1,0 +1,15 @@
+{
+  "original_files_matching_previous_baseline": 134,
+  "latest_Word_unchanged_since_current_digest_recorded": true,
+  "historical_baseline_difference": {
+    "path": "C:\\Users\\Lenovo\\Documents\\ChatGPT\\Otabek MDPI 2026\\Maqola_Otabek_2026_Sustainability_Equations_Corrected.docx",
+    "previous_study_sha256": "3b212316a5f3429c173e23561cbe15e537afa5d64bb8d07587a15f6181c9e627",
+    "current_sha256": "2ac1731fe377f7402bb115fdd9f1dfb2857306cb12ff7c01fd7b590f83da3e13",
+    "bytes": 10620545,
+    "last_modified_UTC": "2026-11-18T06:11:34.730513+00:00",
+    "interpretation": "The current Word file differs from the previous study baseline; its save timestamp precedes creation of this new output directory. This numerical task has not edited Word. Record this difference explicitly and verify this current digest again at delivery."
+  },
+  "sha256_verified": true,
+  "corrected_simulations_files_unchanged": 84,
+  "convergence_checks_files_unchanged": 277
+}

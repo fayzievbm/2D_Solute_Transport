@@ -1,0 +1,9 @@
+﻿Check,Measured,Target_less_than,Unit,Result
+domain_L2,4.84692208810767e-06,0.2,percent,PASS
+time_L2,0.05182796507137082,0.2,percent,PASS
+spatial_L2,0.9474605646623304,1.0,percent,PASS
+spatial_integrals,0.9196674821378851,2.0,percent,PASS
+spatial_point_over_peak,0.4827531442391829,2.0,percent,PASS
+history_over_peak,0.010350752318810117,0.2,percent,PASS
+mass_residual_fraction,2.198845469037731e-12,1e-09,fraction,PASS
+pressure_water_balance_fraction,3.055736700118746e-08,1e-06,fraction,PASS

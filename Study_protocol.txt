@@ -1,0 +1,57 @@
+Startup-pressure correction and figure acceptance protocol
+18 November 2026
+
+The physical model, coefficients, adsorption capacities, fixed 0.04 m inlet,
+ambient downstream pressure, and 15 h duration are retained. Original and
+previously delivered files are not edited. All new outputs are separate.
+
+Pressure: replace directional ADI time splitting by full-system, adaptive
+implicit BDF/NDF integration. The same finite-volume spatial operator is
+used. Structured linear solves are checked against independent sparse LU;
+time integration is checked against an independent matrix exponential.
+Pressure bounds are checked at every accepted adaptive state and every
+queried dense-output state, with 1e-6 Pa roundoff allowance. Pressure is not
+clipped. A separate boundary-flux time integral checks hydraulic storage.
+
+Transport: retain the conservative two-stage ADI fluxes and accepted kinetic
+increments. Use pressure at true physical midpoint/endpoints for velocities.
+Use a smooth geometric startup schedule ending at 800 s, followed by the
+stated 4, 2, or 1 s step. Refine the whole schedule, including startup.
+Check the unchanged transport stages against an independent matrix
+exponential in a prescribed steady velocity field with reactions disabled.
+
+All four figure scenarios: constant and variable dispersion with constant
+inlet, plus constant dispersion with exponential inlet rates 0.001 and
+0.0005 s^-1. Do not treat the two inlet histories as dispersion variants.
+
+Planned comparisons (all scenarios, all phases):
+- Three nested meshes, levels 0, 1, 2; L=64 m, dt=2 s, pressure rtol=1e-8.
+- Finest mesh dt=4 s, pressure rtol=1e-7, versus dt=2 s, rtol=1e-8.
+- Level 0 time steps 4, 2, 1 s, all pressure rtol=1e-8.
+- Level 0 domain length 64 versus 128 m, dt=2 s, rtol=1e-8.
+- Independent finest-mesh pressure-only 15 h runs at rtol 1e-7 and 1e-8.
+
+Acceptance targets carried forward from the prior convergence study:
+- Maximum weighted relative field L2 change over x=0-4 m: temporal and
+  domain <0.2%; finest spatial pair <1%. Times 0.5, 1, 2, 5, 15 h.
+- Spatial final inventory, input, degradation changes <2%.
+- Selected physical-point differences / finer field peak <2%.
+- Full plotted histories at (0.05,0.4) m: maximum time-refinement
+  difference / finer history peak <0.2%. Interpolation is disclosed.
+- Decreasing changes over the three spatial levels; conditional integral
+  Richardson/GCI estimates reported separately from grid-to-grid changes.
+- Solute maximum cumulative residual / final input <1e-9, with every
+  half-step ledger checked and saved residual/current-input also audited.
+- Hydraulic storage / time-integrated boundary-flux relative residual
+  after 1 s <1e-6. Pressure remains within prescribed bounds.
+- Finite concentrations, no meaningful negative dissolved concentration,
+  adsorption capacities respected, exact fixed inlet width, verified
+  Darcy gradients and source hashes in saved outputs.
+
+The selected figure run is mesh2_dt2_t8 only if all required checks pass.
+The _t8 suffix records the use of eight Numba threads after an identical-
+array speed comparison; other runs use two. Solver equations are identical.
+Failure requires diagnosis/refinement, not relaxation of these thresholds.
+No claim of experimental validation or independently established units is
+made. Numerical agreement is not proof of an absolute discretization error.
+The pressure method description in the manuscript must change accordingly.

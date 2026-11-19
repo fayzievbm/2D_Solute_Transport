@@ -1,0 +1,128 @@
+{
+  "passed": true,
+  "reviewed_UTC": "2026-11-18T07:52:17.0166490Z",
+  "review_method": "Actual PDF pages rendered with Poppler; contact sheets inspected for all numbered figures and diagnostics. Full-size review of detailed plots; final revisions to Figures 4, 5, 7, 16 reviewed again at full size.",
+  "numbered_figures": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "diagnostics": [
+    "Mass_balance",
+    "Pressure_bounds"
+  ],
+  "checks": [
+    "Labels, panel letters, axes and units readable; no clipped labels",
+    "No legends cover curves in final revised panels",
+    "Pressure scales and colormap limits consistent",
+    "All source cases and specified profiles retained; symmetric overlap explained",
+    "All 15 PNG/PDF pairs passed export audit"
+  ],
+  "layout_changes": [
+    "Reserved 3D label gutters",
+    "Compact pressure legends below curves",
+    "Shared coordinate legends for three-row profile figures",
+    "Shortened mass-balance ratio label with explanatory caption"
+  ],
+  "figure_data_manifest_sha256": "c7e8fc2198451ef3c379993db05635f71c3b66ef187cd8915a9281aaeaa03679",
+  "render_comparison": [
+    {
+      "file": "Figure_02.png",
+      "sha256": "44f890f692dae23dd2bf3a96863b975ebdaeb013ddef83b7ba5ae856da3ca38b",
+      "changed_since_preceding_visual_review": false
+    },
+    {
+      "file": "Figure_03.png",
+      "sha256": "44ccc4b3f6eede7f568e57d20127b26232e69a337f2d0bab1a26735063fe7733",
+      "changed_since_preceding_visual_review": false
+    },
+    {
+      "file": "Figure_04.png",
+      "sha256": "ba5b0ba052e02a6f54fa61b85b10805db122567eca9a3438e3dbf541e5fd9d62",
+      "changed_since_preceding_visual_review": true
+    },
+    {
+      "file": "Figure_05.png",
+      "sha256": "179065d25febf3325914a9d36cf9259781f7cbc9e72e69f7be829c86a0fc4b3a",
+      "changed_since_preceding_visual_review": true
+    },
+    {
+      "file": "Figure_06.png",
+      "sha256": "d9d0dfb71da461e44f96de9fb13617b26e1c97ec4cf2a21be5cf33cb66f94593",
+      "changed_since_preceding_visual_review": false
+    },
+    {
+      "file": "Figure_07.png",
+      "sha256": "0ff08cf36f378b541e5fdc953f1092ea150bf32bfb6df97f75e1899b795dc239",
+      "changed_since_preceding_visual_review": true
+    },
+    {
+      "file": "Figure_08.png",
+      "sha256": "043cec54ac8e4ea45b82b7fe8ec969f932332b22403e66e55242a56c516e51dc",
+      "changed_since_preceding_visual_review": false
+    },
+    {
+      "file": "Figure_09.png",
+      "sha256": "f661a54eeab6e177e5a5e1366967e2eda8683a225f39f0c7616a37e5338e97bf",
+      "changed_since_preceding_visual_review": false
+    },
+    {
+      "file": "Figure_10.png",
+      "sha256": "1bde10e66cf8e0a6582fb6f95cc89df6ccd1658b3a9f81f7f15c9352ba4d3122",
+      "changed_since_preceding_visual_review": false
+    },
+    {
+      "file": "Figure_11.png",
+      "sha256": "19dca5c2977d6c45b34b351cb44f7ee0771bad10c968931fa651fdd458b1b062",
+      "changed_since_preceding_visual_review": false
+    },
+    {
+      "file": "Figure_12.png",
+      "sha256": "250e766d6bd7080a001684fd53b30ada08f7db300bbceeaccbc2002d77f96c8e",
+      "changed_since_preceding_visual_review": false
+    },
+    {
+      "file": "Figure_13.png",
+      "sha256": "dd0882564b41e432540d8122cf29574909869151d1b38a3e045a41060cb95616",
+      "changed_since_preceding_visual_review": false
+    },
+    {
+      "file": "Figure_14.png",
+      "sha256": "abcc54023ee77c9c7f9fcdd5c1230ce4dbf5a6ca25e63c82b0cfacefdbc77cf4",
+      "changed_since_preceding_visual_review": false
+    },
+    {
+      "file": "Figure_15.png",
+      "sha256": "3589b2e62d1f28fafd5de53a8a7a87108e4edce52d091571d2f6401597e2a584",
+      "changed_since_preceding_visual_review": false
+    },
+    {
+      "file": "Figure_16.png",
+      "sha256": "955dc72ea77dc2513dbf073246cc36d7c9ea4c57821e374e1ed65a73259c5b51",
+      "changed_since_preceding_visual_review": true
+    },
+    {
+      "file": "Mass_balance.png",
+      "sha256": "adf89bb5afaaa2364a0078d768771fed06605d6e3d226cfec0202a8be0426b62",
+      "changed_since_preceding_visual_review": false
+    },
+    {
+      "file": "Pressure_bounds.png",
+      "sha256": "5e74cf7ce638b59a4b8b7d66ce00ef5bb6912ca8980c007e6154d47bd14a8a68",
+      "changed_since_preceding_visual_review": false
+    }
+  ],
+  "Word_current_digest_reverified": "2ac1731fe377f7402bb115fdd9f1dfb2857306cb12ff7c01fd7b590f83da3e13"
+}

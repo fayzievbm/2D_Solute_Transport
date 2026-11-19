@@ -1,0 +1,43 @@
+{
+  "known_pore_velocity_m_per_s": 0.00016666666666666666,
+  "comparisons": [
+    {
+      "dt": 0.2,
+      "case": "constant",
+      "relative_L2_error": 0.0006750610348501084,
+      "mass_residual_fraction": 1.0191817302331615e-15
+    },
+    {
+      "dt": 0.2,
+      "case": "variable",
+      "relative_L2_error": 0.00046592641919750085,
+      "mass_residual_fraction": 6.475858363888919e-16
+    },
+    {
+      "dt": 0.1,
+      "case": "constant",
+      "relative_L2_error": 0.0001685095955400703,
+      "mass_residual_fraction": 8.300914199394448e-16
+    },
+    {
+      "dt": 0.1,
+      "case": "variable",
+      "relative_L2_error": 0.00011636653319247295,
+      "mass_residual_fraction": 7.005043859221639e-16
+    },
+    {
+      "dt": 0.05,
+      "case": "constant",
+      "relative_L2_error": 4.211146291322347e-05,
+      "mass_residual_fraction": 5.65685116608963e-15
+    },
+    {
+      "dt": 0.05,
+      "case": "variable",
+      "relative_L2_error": 2.908445372401002e-05,
+      "mass_residual_fraction": 9.108499014490424e-16
+    }
+  ],
+  "passed": true,
+  "interpretation": "Unchanged transport flux/reaction stages tested with zero reaction rates and a known steady Darcy field; independent full-matrix exponential provides the exact semidiscrete reference."
+}

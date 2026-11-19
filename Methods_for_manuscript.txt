@@ -1,0 +1,119 @@
+PROPOSED REPLACEMENT NUMERICAL-METHOD TEXT
+
+Pressure integration and initial transient
+
+The pressure field was expressed as q = p - p0, so that the downstream
+condition becomes q = 0 while the prescribed inlet value is q = p1 - p0.
+The physical pressure equation, permeability coefficients, storage
+coefficient and boundary conditions were retained. A conservative spatial
+discretization on the nonuniform mesh yields the linear initial-value
+problem dq/dt = A q + b, with q(0) = 0. Here A contains both spatial
+directions and b represents the finite inlet opening. This complete system
+was integrated using an adaptive implicit backward-differentiation method
+with orders 1-5 and the numerical-differentiation-formula enhancement
+implemented in SciPy. The selected calculation used relative tolerance
+1e-8 and absolute tolerance 1e-7 Pa for q.
+
+Each implicit step solves the full coupled spatial system. A transverse
+eigendecomposition, tridiagonal solves in the longitudinal direction and
+a low-rank correction for the finite inlet accelerate this solve without
+introducing directional time splitting. The structured solve was checked
+against an independent sparse direct solve, and pressure time integration
+was checked against a matrix-exponential reference on a smaller mesh.
+
+The change in pressure integration addresses the spurious startup
+overshoot observed with the previous directionally split pressure scheme
+under the abruptly imposed inlet pressure. The boundary activation and
+physical initial condition were retained; neither pressure clipping nor
+an artificial ramp in the prescribed inlet pressure was introduced.
+Pressure bounds were checked at every accepted adaptive state and at
+every time requested by the transport calculation, allowing 1e-6 Pa for
+roundoff. This is a verified property of the reported calculations, not
+a general positivity guarantee for arbitrary BDF steps or parameters.
+
+Transport integration and conservation
+
+The conservative two-stage alternating-direction transport scheme and
+the corrected adsorption/desorption increments were retained. Darcy
+velocities were evaluated from the pressure field at the actual physical
+midpoint for the longitudinal flux and at the beginning/end of each
+transport step for the transverse flux. A smoothly increasing geometric
+transport-step sequence covers the first 800 s, followed by a 2 s step
+in the selected calculation. The step sequence is normalized to reach
+800 s exactly, with no abrupt increase at the transition. The entire
+sequence, including startup, was refined in the temporal study. The
+time-dependent inlet concentrations were evaluated using physical time.
+
+All four scenarios were recomputed: constant anisotropic dispersion and
+variable scalar dispersion with constant inlet concentration, and constant
+dispersion with exponential inlet histories having rate constants 0.001
+and 0.0005 s^-1. Their physical parameters are listed in the accompanying
+run summary and were not recalibrated during numerical verification.
+
+The total discrete solute inventory was calculated as
+M(t) = sum_ij V_ij [theta c_ij(t) + ca_ij(t) + cp_ij(t)].
+The balance residual was evaluated from
+R(t) = M(t) - M(0) - I(t) + O(t) + G(t),
+where I, O and G denote cumulative boundary input, boundary output and
+degradation, respectively. Boundary fluxes and degradation were taken
+from the actual half-step updates. Accepted capacity-limited changes
+in adsorbed concentration were used consistently in the dissolved-phase
+source, avoiding double counting of adsorption or adsorbed-phase decay.
+Every half-step contributed to the balance audit. No dissolved-phase
+concentration clipping was used. Boundary nodes are algebraic values
+and do not add storage; V_ij denotes the interior nodal control volumes.
+The represented volume approaches the physical domain volume as the
+mesh is refined. Integrated amounts retain the supplied concentration
+basis per unit transverse thickness.
+
+An independent hydraulic check compared Sp sum_ij V_ij q_ij(t) with
+the time integral of the net Darcy boundary flux. The latter was
+integrated over the pressure solver's piecewise-polynomial dense output
+using three-point Gaussian quadrature, which integrates these scalar
+polynomials exactly apart from floating-point and solution error.
+
+Geometry and numerical verification
+
+The inlet is a fixed 0.04 m opening at x=0, extending from y=0.38 to
+0.42 m in the 0.8 m-high domain. Face-overlap fractions preserve this
+width on every mesh. The remaining upstream wall and both transverse
+walls are impermeable. The downstream condition is p=p0=100000 Pa;
+the inlet pressure is p1=500000 Pa. The 64 m computational domain
+represents a truncation of the semi-infinite domain. Its adequacy was
+tested by extending it to 128 m. The plotted intervals (0-4 m or 0-2 m)
+are distinct from the computational length.
+
+Three nested meshes were obtained by bisecting every interval. The finest
+mesh contains 1013 by 489 stored nodes, including boundary nodes; it is
+nonuniform and must not be described using one uniform spatial step.
+The complete coordinates accompany the numerical outputs. Field
+comparisons use volume-weighted relative L2 differences over 0-4 m
+at 0.5, 1, 2, 5 and 15 h, with q used for pressure normalization.
+The finer or longer-domain solution is the comparison denominator.
+Final inventories, cumulative inputs, cumulative degradation, selected
+physical-point values and complete histories at (0.05,0.4) m were also
+checked. The zero-reaction transport reference displayed approximately
+second-order temporal error reduction. In the three-step full reactive
+calculation, final inventory changes showed approximately first-order
+temporal convergence; the complete coupled algorithm is therefore not
+claimed to be globally second-order in time. The accompanying verification report gives the measured
+changes and acceptance decision. Grid-to-grid differences and
+conditional Richardson/GCI estimates are reported separately; neither
+is presented as independent experimental validation.
+
+EDITORIAL INSTRUCTIONS FOR APPLYING THIS TEXT
+
+Replace the previous pressure ADI time-discretization description and its
+two pressure stage equations with the full-system pressure formulation
+above. Retain the physical pressure PDE, corrected phase mass balances,
+Darcy law, material parameters and transport stage equations, revising
+their velocity-time notation as described. Update all statements that
+claim one fixed step from t=0 or a 4 m computational outlet. Use the
+new figure captions and measured convergence table. Renumber equations
+and cross-references only when this text is inserted into a new Word copy.
+No Word manuscript has been changed by this numerical-results package.
+
+Implementation reference
+SciPy, scipy.integrate.BDF documentation:
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.BDF.html
+The exact software versions are recorded in requirements.txt.

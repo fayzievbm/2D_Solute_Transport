@@ -1,0 +1,98 @@
+{
+  "level": 2,
+  "rtol": 1e-08,
+  "rows": [
+    {
+      "time_s": 1e-05,
+      "elapsed_s": 4.543271099915728,
+      "steps": 37,
+      "nlu": 10,
+      "max_pressure_Pa": 130256.88415475987
+    },
+    {
+      "time_s": 0.001,
+      "elapsed_s": 16.427236799965613,
+      "steps": 160,
+      "nlu": 31,
+      "max_pressure_Pa": 421760.8339632716
+    },
+    {
+      "time_s": 0.1,
+      "elapsed_s": 40.06810069992207,
+      "steps": 404,
+      "nlu": 72,
+      "max_pressure_Pa": 491849.28606114496
+    },
+    {
+      "time_s": 1,
+      "elapsed_s": 53.19766860001255,
+      "steps": 537,
+      "nlu": 94,
+      "max_pressure_Pa": 496177.4804258303
+    },
+    {
+      "time_s": 10,
+      "elapsed_s": 68.95512820000295,
+      "steps": 676,
+      "nlu": 117,
+      "max_pressure_Pa": 497559.2526344624
+    },
+    {
+      "time_s": 100,
+      "elapsed_s": 100.45752379996702,
+      "steps": 819,
+      "nlu": 141,
+      "max_pressure_Pa": 498290.7088814065
+    },
+    {
+      "time_s": 1000,
+      "elapsed_s": 131.4492373999674,
+      "steps": 962,
+      "nlu": 165,
+      "max_pressure_Pa": 499123.86153449054
+    },
+    {
+      "time_s": 1800,
+      "elapsed_s": 139.5872534000082,
+      "steps": 999,
+      "nlu": 171,
+      "max_pressure_Pa": 499308.49644647236
+    },
+    {
+      "time_s": 3600,
+      "elapsed_s": 148.37772470002528,
+      "steps": 1044,
+      "nlu": 178,
+      "max_pressure_Pa": 499489.50664562744
+    },
+    {
+      "time_s": 7200,
+      "elapsed_s": 156.99042879999615,
+      "steps": 1090,
+      "nlu": 186,
+      "max_pressure_Pa": 499629.99347717175
+    },
+    {
+      "time_s": 18000,
+      "elapsed_s": 169.11193699995056,
+      "steps": 1155,
+      "nlu": 197,
+      "max_pressure_Pa": 499762.16296632326
+    },
+    {
+      "time_s": 54000,
+      "elapsed_s": 183.05316389992367,
+      "steps": 1222,
+      "nlu": 209,
+      "max_pressure_Pa": 499861.63661310857
+    }
+  ],
+  "stats": {
+    "min_gauge_pressure": -2.152986751975598e-24,
+    "max_gauge_pressure": 399861.6366131086,
+    "adaptive_steps": 1222,
+    "max_storage_integral_residual": 3.1228445523945325e-10,
+    "max_relative_storage_integral_residual_after_1s": 6.726599642853364e-09
+  },
+  "passed": true
+}

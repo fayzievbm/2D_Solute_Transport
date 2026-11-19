@@ -1,0 +1,178 @@
+{
+  "parameters": {
+    "L": 64.0,
+    "H": 0.8,
+    "dx": 0.0015625,
+    "dy": 0.00125,
+    "dt": 2.0,
+    "duration": 54000.0,
+    "p_ambient": 100000.0,
+    "p_inlet": 500000.0,
+    "permeability_x": 5e-14,
+    "permeability_y": 1e-14,
+    "viscosity": 0.001,
+    "storage": 1e-08,
+    "porosity": 0.3,
+    "c_inlet": 0.01,
+    "D_x": 5e-05,
+    "D_y": 1e-05,
+    "D0": 1e-05,
+    "omega_D": 1.0,
+    "capacity_a": 0.004,
+    "capacity_p": 0.008,
+    "transition_a": 0.0002,
+    "transition_p": 0.003,
+    "beta_ar": 3e-05,
+    "beta_aa": 2.5e-05,
+    "beta_ad": 3e-05,
+    "beta_p0": 7.5e-05,
+    "lambda_c": 1e-05,
+    "lambda_a": 2e-05,
+    "lambda_p": 1.5e-05,
+    "inlet_mode": "fixed_width",
+    "inlet_width": 0.04
+  },
+  "scenario_names": [
+    "constant",
+    "variable",
+    "exp_0.001",
+    "exp_0.0005"
+  ],
+  "actual_transport_steps": 30844,
+  "snapshot_steps": {
+    "0": 0.0,
+    "900": 1800.0,
+    "1800": 3600.0,
+    "3600": 7200.0,
+    "9000": 18000.0,
+    "27000": 54000.0
+  },
+  "snapshot_key_definition": "Requested physical time divided by subsequent transport dt; not the actual step count during startup.",
+  "mesh": {
+    "level": 1,
+    "nx": 507,
+    "ny": 245,
+    "min_dx": 0.0015624999999999944,
+    "max_dx": 0.40000000000000213,
+    "min_dy": 0.0012136134202851423,
+    "max_dy": 0.0050000000000000044
+  },
+  "effective_inlet_width": 0.03999999999999959,
+  "inventory_area": 51.06249784159235,
+  "time_integration": {
+    "pressure": "Unsplit BDF/NDF, variable order 1-5, structured full-matrix linear solves",
+    "pressure_rtol": 1e-08,
+    "pressure_atol_Pa": 1e-07,
+    "transport": "Conservative two-stage ADI with physical midpoint x velocity and endpoint y velocities; unchanged projected kinetic increments.",
+    "startup_end_s": 800.0,
+    "startup_growth": 1.0025,
+    "initial_step_s": 4.9995008623359213e-05,
+    "last_startup_step_s": 1.9950623391606797,
+    "subsequent_step_s": 2.0
+  },
+  "pressure": {
+    "min_gauge_pressure": -6.909653825499416e-25,
+    "max_gauge_pressure": 399719.95303899405,
+    "adaptive_steps": 1156,
+    "max_storage_integral_residual": 3.244475590968854e-10,
+    "max_relative_storage_integral_residual_after_1s": 7.0025286173245636e-09,
+    "nlu": 198,
+    "nfev": 2314
+  },
+  "transport": {
+    "constant": {
+      "inventory": 0.0026067006917772076,
+      "cumulative_in": 0.0038891520526186415,
+      "cumulative_out": 2.323384262358135e-120,
+      "cumulative_degradation": 0.0012824513608397183,
+      "final_residual": -1.7156415177410622e-15,
+      "max_cumulative_residual": 1.7973903615464693e-15,
+      "relative_max_cumulative_residual": 4.621548186413158e-13,
+      "max_half_step_residual": 9.640293730938006e-20,
+      "min_c": -6.974112047451294e-305,
+      "max_c": 0.009895945691904712,
+      "capacity_projection_count": 3440,
+      "max_ca": 0.004,
+      "max_cp": 0.008
+    },
+    "variable": {
+      "inventory": 0.003365093538085929,
+      "cumulative_in": 0.0050204818754205835,
+      "cumulative_out": 1.286695197195192e-192,
+      "cumulative_degradation": 0.0016553883373286303,
+      "final_residual": -6.02404411076396e-15,
+      "max_cumulative_residual": 6.120971784984164e-15,
+      "relative_max_cumulative_residual": 1.2192000562638e-12,
+      "max_half_step_residual": 2.1404125530422144e-19,
+      "min_c": -2.535984463541885e-304,
+      "max_c": 0.0098254089260318,
+      "capacity_projection_count": 3791,
+      "max_ca": 0.004,
+      "max_cp": 0.008
+    },
+    "exp_0.001": {
+      "inventory": 0.0025712984477398357,
+      "cumulative_in": 0.0038051561056559133,
+      "cumulative_out": 6.329131136493349e-121,
+      "cumulative_degradation": 0.0012338576579143015,
+      "final_residual": -1.7761399989657534e-15,
+      "max_cumulative_residual": 1.7835125737386548e-15,
+      "relative_max_cumulative_residual": 4.687094364112092e-13,
+      "max_half_step_residual": 9.6495581537986e-20,
+      "min_c": -6.933583153928011e-305,
+      "max_c": 0.00989584527683315,
+      "capacity_projection_count": 3332,
+      "max_ca": 0.004,
+      "max_cp": 0.008
+    },
+    "exp_0.0005": {
+      "inventory": 0.002538155030211604,
+      "cumulative_in": 0.003729010922827395,
+      "cumulative_out": 3.6762087540258465e-121,
+      "cumulative_degradation": 0.0011908558926140452,
+      "final_residual": -1.7457823381361592e-15,
+      "max_cumulative_residual": 1.7373255611907723e-15,
+      "relative_max_cumulative_residual": 4.658944683040791e-13,
+      "max_half_step_residual": 9.616470929296479e-20,
+      "min_c": -7.099607148423646e-305,
+      "max_c": 0.009895747954306523,
+      "capacity_projection_count": 3228,
+      "max_ca": 0.004,
+      "max_cp": 0.008
+    }
+  },
+  "floating_point": {
+    "main": {
+      "enabled": true,
+      "normal_min": 2.2250738585072014e-308,
+      "control_word": 17301535,
+      "scope": "current simulation thread only"
+    },
+    "workers": {
+      "enabled": true,
+      "workers": 2,
+      "saved_control_words": [
+        524319,
+        524319
+      ],
+      "normal_min": 2.2250738585072014e-308,
+      "scope": "simulation worker threads; restored on exit"
+    }
+  },
+  "elapsed_seconds": 1370.8667558999732,
+  "code_hashes": {
+    "corrected_solver.py": "f304ad01dce0e81e62cfc60ddce689a8b3303a1a38a812bb9a1c0c495f66e4c7",
+    "pressure_implicit.py": "c9ba137f907289859684a7eb59ad731eeb488779dd775fd1540de53cc0e4028f",
+    "blocked_solver.py": "be3d38b68a16dc3ee0418e0b882b7284d33bed8b594b7c7c914ec71ea6657d0b",
+    "blocked_transport.py": "768dfc80983009b4ace365d62a9650d5fe9655f1ebac7151564a8789642e3a6f",
+    "blocked_base.py": "5998599bd077f5ce51ad40fdd09854436ba3b9bc918014a56c9956c95cc38ca2",
+    "reference_solver.py": "eaf91563af082d4e397a1eef564eaaf9c68bd16f121e1e3b58ae6c554afeae69",
+    "floating_point.py": "f16be2390a501bf4a093bb599bff4329fccdd9d0f3efb8dae4d684e8459d1987",
+    "worker_floating_point.py": "8b04c01816673fd9fa53745d41a73df57baedb26dafceeeb3a67d92b0a498b03",
+    "run.py": "3d40c8b8cc118ad1420c017324cabcc839d82a61601b96e6d60e0cbc7e768e61"
+  },
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "2",
+    "NUMBA_NUM_THREADS": "2"
+  }
+}

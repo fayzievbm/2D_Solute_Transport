@@ -1,0 +1,327 @@
+[
+  {
+    "figure": 2,
+    "selected_run": "mesh2_dt2_t8",
+    "sources": {
+      "flow_snapshots.npz": {
+        "sha256": "ce5253c493c1ba30beb1185bfc5eaf57e8b80a7af7116b8c6dc71d182a18c89d",
+        "array_keys_or_columns": [
+          "9000_p",
+          "900_p"
+        ]
+      }
+    },
+    "caption": "Pressure surfaces at 0.5 h (a) and 5 h (b), with ambient downstream pressure 100 kPa and inlet pressure 500 kPa.",
+    "output_sha256": {
+      "png": "726d1118fca4e3fea1de8d3c185d0e7c2708f6b43f44ecde7c0d8f12918afde9",
+      "pdf": "6937e3dd1f6552d554c14dcf59850cf3afb18932ae1a5be43c4444280eff5cc2"
+    }
+  },
+  {
+    "figure": 3,
+    "selected_run": "mesh2_dt2_t8",
+    "sources": {
+      "flow_snapshots.npz": {
+        "sha256": "ce5253c493c1ba30beb1185bfc5eaf57e8b80a7af7116b8c6dc71d182a18c89d",
+        "array_keys_or_columns": [
+          "9000_p",
+          "900_p"
+        ]
+      }
+    },
+    "caption": "Pressure contours at 0.5 h (a) and 5 h (b). The displayed interval is 0-4 m; the downstream numerical boundary is at 64 m.",
+    "output_sha256": {
+      "png": "a49db11d2ab3cf5e51df37dd629453b9e0a9dcd1625b23d20d4a1478d4b98476",
+      "pdf": "745d9c7685e30a599f9225ab91a7e4e60c5a2e4510b0d2de53edc7cc1de475fe"
+    }
+  },
+  {
+    "figure": 4,
+    "selected_run": "mesh2_dt2_t8",
+    "sources": {
+      "flow_snapshots.npz": {
+        "sha256": "ce5253c493c1ba30beb1185bfc5eaf57e8b80a7af7116b8c6dc71d182a18c89d",
+        "array_keys_or_columns": [
+          "900_p"
+        ]
+      }
+    },
+    "caption": "Pressure cross sections at t = 0.5 h: longitudinal profiles at selected y coordinates (a) and transverse profiles at selected x coordinates (b).",
+    "output_sha256": {
+      "png": "5d862d062c5df4a3bc9deef548c4e9804c8e47fc400bbb2677bd42385ea87042",
+      "pdf": "3206404312e399b4b781eb4be5f632d7b3832925e3c902ceb7bb1c8c246efb01"
+    }
+  },
+  {
+    "figure": 5,
+    "selected_run": "mesh2_dt2_t8",
+    "sources": {
+      "flow_snapshots.npz": {
+        "sha256": "ce5253c493c1ba30beb1185bfc5eaf57e8b80a7af7116b8c6dc71d182a18c89d",
+        "array_keys_or_columns": [
+          "9000_p"
+        ]
+      }
+    },
+    "caption": "Pressure cross sections at t = 5 h: longitudinal profiles at selected y coordinates (a) and transverse profiles at selected x coordinates (b).",
+    "output_sha256": {
+      "png": "f0ff8822022dee4b51168ee78a73b0424f7b34f93e495474da813c66b6121a0e",
+      "pdf": "cb97888d09808bb2c62343987c8f9c5b43faf60eb745fc78290a9ced327b4a0e"
+    }
+  },
+  {
+    "figure": 6,
+    "selected_run": "mesh2_dt2_t8",
+    "sources": {
+      "constant_snapshots.npz": {
+        "sha256": "33bd6a3b501271c40105f98a03b4945e0c195402f768d4895f1644f74bf90333",
+        "array_keys_or_columns": [
+          "27000_c",
+          "27000_ca",
+          "27000_cp"
+        ]
+      }
+    },
+    "caption": "Concentration surfaces at 15 h for constant inlet and constant dispersion. The displayed x interval is 0-2 m; the computation extends to 64 m.",
+    "output_sha256": {
+      "png": "932c5ba231430146a2a44655bdb96aec4227d384cdca5f5cfe03de3c55dbe853",
+      "pdf": "925db864d531e0ace002f7dea41f519c549faf583dd98b3b2e2ea310617f4dae"
+    }
+  },
+  {
+    "figure": 8,
+    "selected_run": "mesh2_dt2_t8",
+    "sources": {
+      "exp_0.001_snapshots.npz": {
+        "sha256": "32a7d6a802cdab457a64b520e46918230160dfbd8879c3a13f3384f6129cf1f9",
+        "array_keys_or_columns": [
+          "27000_c",
+          "27000_ca",
+          "27000_cp"
+        ]
+      }
+    },
+    "caption": "Concentration surfaces at 15 h for exponential inlet with phi = 0.001 s^-1 and constant dispersion. The displayed x interval is 0-2 m; the computation extends to 64 m.",
+    "output_sha256": {
+      "png": "97365a386700c0d158fb01a2fbf17bbec89bec02655d95d38257e27cb593e151",
+      "pdf": "817d377474619054f8f98ffed9e30226c164109f6fd78365c4b1aad6459deae9"
+    }
+  },
+  {
+    "figure": 7,
+    "selected_run": "mesh2_dt2_t8",
+    "sources": {
+      "constant_snapshots.npz": {
+        "sha256": "33bd6a3b501271c40105f98a03b4945e0c195402f768d4895f1644f74bf90333",
+        "array_keys_or_columns": [
+          "27000_c",
+          "27000_ca",
+          "27000_cp"
+        ]
+      }
+    },
+    "caption": "Cross sections at 15 h for constant dispersion and constant inlet concentration. Dissolved concentration c (a,b), adsorbed concentration ca (c,d), and adsorbed concentration cp (e,f). Left panels show longitudinal profiles; right panels show transverse profiles. The coordinate legends in (a) and (b) apply to all rows.",
+    "output_sha256": {
+      "png": "82ceebab082de138db2f4cef43cc9b12a627e96d03216163a31627dd58dcf584",
+      "pdf": "6653f123a2e47f75899a56d84d91c4c62892748c50a7dee35897abaf60ca4696"
+    }
+  },
+  {
+    "figure": 16,
+    "selected_run": "mesh2_dt2_t8",
+    "sources": {
+      "variable_snapshots.npz": {
+        "sha256": "5521756d8f92d2588a459e5dd204ca55fe6553af750124f9894a5cfd1db85ba0",
+        "array_keys_or_columns": [
+          "27000_c",
+          "27000_ca",
+          "27000_cp"
+        ]
+      }
+    },
+    "caption": "Cross sections at 15 h for variable dispersion and constant inlet concentration. Dissolved concentration c (a,b), adsorbed concentration ca (c,d), and adsorbed concentration cp (e,f). Left panels show longitudinal profiles; right panels show transverse profiles. The coordinate legends in (a) and (b) apply to all rows.",
+    "output_sha256": {
+      "png": "c818658e67daec3d2ca3659a8b05c30f57fd27da0432f1e37568bb0fadb025ff",
+      "pdf": "658cd25bf8d0c985b506a0ef56d40af8367c8aab70f00cad58a598d5ebfd57e3"
+    }
+  },
+  {
+    "figure": 9,
+    "selected_run": "mesh2_dt2_t8",
+    "sources": {
+      "exp_0.001_snapshots.npz": {
+        "sha256": "32a7d6a802cdab457a64b520e46918230160dfbd8879c3a13f3384f6129cf1f9",
+        "array_keys_or_columns": [
+          "27000_c"
+        ]
+      },
+      "exp_0.0005_snapshots.npz": {
+        "sha256": "4350eb1c5436fe412f2497a5fa6f45ee0410e7ba39ec9401a3fea71dc215ab19",
+        "array_keys_or_columns": [
+          "27000_c"
+        ]
+      }
+    },
+    "caption": "Cross sections of c at 15 h under exponential inlet histories with phi = 0.001 s^-1 (a,b) and 0.0005 s^-1 (c,d), using constant dispersion. Left panels show longitudinal profiles; right panels show transverse profiles.",
+    "output_sha256": {
+      "png": "d72976d86c7fad6c0116ed5c471299d3800315e594a11e0e5319f12f597a7f29",
+      "pdf": "a6bb8386470f7865138c301d604a26540e57258569683c3dcc9b0f76d33fb0f4"
+    }
+  },
+  {
+    "figure": 10,
+    "selected_run": "mesh2_dt2_t8",
+    "sources": {
+      "exp_0.001_snapshots.npz": {
+        "sha256": "32a7d6a802cdab457a64b520e46918230160dfbd8879c3a13f3384f6129cf1f9",
+        "array_keys_or_columns": [
+          "3600_c"
+        ]
+      },
+      "exp_0.0005_snapshots.npz": {
+        "sha256": "4350eb1c5436fe412f2497a5fa6f45ee0410e7ba39ec9401a3fea71dc215ab19",
+        "array_keys_or_columns": [
+          "3600_c"
+        ]
+      }
+    },
+    "caption": "Cross sections of c at 2 h under exponential inlet histories with phi = 0.001 s^-1 (a,b) and 0.0005 s^-1 (c,d), using constant dispersion. Left panels show longitudinal profiles; right panels show transverse profiles.",
+    "output_sha256": {
+      "png": "47e74fa245b4bfab3c55603be530cfe9f57d662ab7aad4b8c92b16fd23427237",
+      "pdf": "f2348860cd9dc8fb6c92f4218069471b71330e6ecef0adcd34b4fec0fbf8bb0e"
+    }
+  },
+  {
+    "figure": 11,
+    "selected_run": "mesh2_dt2_t8",
+    "sources": {
+      "exp_0.001_snapshots.npz": {
+        "sha256": "32a7d6a802cdab457a64b520e46918230160dfbd8879c3a13f3384f6129cf1f9",
+        "array_keys_or_columns": [
+          "3600_ca"
+        ]
+      },
+      "exp_0.0005_snapshots.npz": {
+        "sha256": "4350eb1c5436fe412f2497a5fa6f45ee0410e7ba39ec9401a3fea71dc215ab19",
+        "array_keys_or_columns": [
+          "3600_ca"
+        ]
+      }
+    },
+    "caption": "Cross sections of ca at 2 h under exponential inlet histories with phi = 0.001 s^-1 (a,b) and 0.0005 s^-1 (c,d), using constant dispersion. Left panels show longitudinal profiles; right panels show transverse profiles.",
+    "output_sha256": {
+      "png": "35e30144ed2200449237d6f8244ead42429fc607559ab18bb18fe4d2ad99252a",
+      "pdf": "8bb3a92bdb3f70f8f3c57ec90a39356fe2856984f34d53a013d963cc98d254a5"
+    }
+  },
+  {
+    "figure": 12,
+    "selected_run": "mesh2_dt2_t8",
+    "sources": {
+      "exp_0.001_snapshots.npz": {
+        "sha256": "32a7d6a802cdab457a64b520e46918230160dfbd8879c3a13f3384f6129cf1f9",
+        "array_keys_or_columns": [
+          "3600_cp"
+        ]
+      },
+      "exp_0.0005_snapshots.npz": {
+        "sha256": "4350eb1c5436fe412f2497a5fa6f45ee0410e7ba39ec9401a3fea71dc215ab19",
+        "array_keys_or_columns": [
+          "3600_cp"
+        ]
+      }
+    },
+    "caption": "Cross sections of cp at 2 h under exponential inlet histories with phi = 0.001 s^-1 (a,b) and 0.0005 s^-1 (c,d), using constant dispersion. Left panels show longitudinal profiles; right panels show transverse profiles.",
+    "output_sha256": {
+      "png": "5cf9d653533cbdbc37f69d2fcf5739dcffeeabb7e517df5c441508b20cc6eee8",
+      "pdf": "d546b3bd14345f59a06a0fb933951eb904441ff50c09e6e56f909de7c00f8856"
+    }
+  },
+  {
+    "figure": 13,
+    "selected_run": "mesh2_dt2_t8",
+    "sources": {
+      "constant_history.csv": {
+        "sha256": "e433a219f849d2e7aa222beb621ada17eee5e0a766fdc43fe8ed2d3c86b86fd6",
+        "array_keys_or_columns": [
+          "c_at_005_mid",
+          "ca_at_005_mid",
+          "cp_at_005_mid",
+          "time_s"
+        ]
+      },
+      "exp_0.001_history.csv": {
+        "sha256": "a33e6591983609ab2bbc7bfba2f277e45f4ec5922c658797553ce9e99978d39c",
+        "array_keys_or_columns": [
+          "c_at_005_mid",
+          "ca_at_005_mid",
+          "cp_at_005_mid",
+          "time_s"
+        ]
+      },
+      "exp_0.0005_history.csv": {
+        "sha256": "fbbe8706fa440666b4a0fed671a4d43bb462c68fda984342bf9c1ffa7bc76bfc",
+        "array_keys_or_columns": [
+          "c_at_005_mid",
+          "ca_at_005_mid",
+          "cp_at_005_mid",
+          "time_s"
+        ]
+      }
+    },
+    "caption": "Time evolution at (x,y) = (0.05,0.4) m for constant and exponential inlet histories. All histories are sampled at this same physical point.",
+    "output_sha256": {
+      "png": "559e862aa9dc7d20eade9403cee02a2cba6d5360fe3dfa5106211c1e8936a858",
+      "pdf": "e23730615a65a3e8e9ba262f8cf33d61178f22c9fa112a4b5cb83d4336276683"
+    }
+  },
+  {
+    "figure": 14,
+    "selected_run": "mesh2_dt2_t8",
+    "sources": {
+      "variable_snapshots.npz": {
+        "sha256": "5521756d8f92d2588a459e5dd204ca55fe6553af750124f9894a5cfd1db85ba0",
+        "array_keys_or_columns": [
+          "27000_c",
+          "27000_ca",
+          "27000_cp",
+          "3600_c",
+          "3600_ca",
+          "3600_cp"
+        ]
+      }
+    },
+    "caption": "Variable-dispersion concentration surfaces under constant inlet concentration at 2 h (green) and 15 h (blue).",
+    "output_sha256": {
+      "png": "d049ce9f54cf865025e72f84e222c355b910d83fda4ab430f874b0668cfbe0e4",
+      "pdf": "3339d41c4ca5bfb3c78d6a1a7b44880818b95830ad742fb70c0da07d0c858583"
+    }
+  },
+  {
+    "figure": 15,
+    "selected_run": "mesh2_dt2_t8",
+    "sources": {
+      "constant_snapshots.npz": {
+        "sha256": "33bd6a3b501271c40105f98a03b4945e0c195402f768d4895f1644f74bf90333",
+        "array_keys_or_columns": [
+          "27000_c",
+          "27000_ca",
+          "27000_cp"
+        ]
+      },
+      "variable_snapshots.npz": {
+        "sha256": "5521756d8f92d2588a459e5dd204ca55fe6553af750124f9894a5cfd1db85ba0",
+        "array_keys_or_columns": [
+          "27000_c",
+          "27000_ca",
+          "27000_cp"
+        ]
+      }
+    },
+    "caption": "Comparison of constant anisotropic dispersion and spatially variable scalar dispersion under constant inlet concentration at 15 h. Blue: constant dispersion. Orange: variable dispersion.",
+    "output_sha256": {
+      "png": "fe020e9b13c38973815f0ba2983204bf160fce5a121d89e42d5b7190a2a40d7f",
+      "pdf": "84b2a447157e3018ca56619ac34705b94be0c3eb228323ddefc9cf38af3ea7ab"
+    }
+  }
+]

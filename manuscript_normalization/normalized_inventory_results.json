@@ -1,0 +1,120 @@
+{
+  "concentration_convention": {
+    "c": "C_water / C_ref",
+    "ca": "C_active_bulk / C_ref",
+    "cp": "C_passive_bulk / C_ref",
+    "reference": "One common positive concentration scale; its physical value is unspecified.",
+    "concentration_units": "dimensionless",
+    "coordinates": "m",
+    "time": "s",
+    "integrated_M_I_O_G_units": "m^2",
+    "dimensional_conversion": "C_ref times an integral gives parent-solute amount per unit transverse thickness.",
+    "normalized_ratios": "dimensionless; percentages multiply by 100"
+  },
+  "cases": {
+    "constant": {
+      "phase_integrals_m2": {
+        "c": 0.00026382692160032035,
+        "ca": 0.0004345390133259545,
+        "cp": 0.0019211271133280634
+      },
+      "input_integral_m2": 0.003908234289568052,
+      "percent_of_input": {
+        "c": 6.750540066252762,
+        "ca": 11.118550760527226,
+        "cp": 49.15588398720055,
+        "stored": 67.02497481398412,
+        "degraded": 32.97502518580052,
+        "outlet": 1.245828780120792e-143
+      }
+    },
+    "variable": {
+      "phase_integrals_m2": {
+        "c": 0.00037526056505309864,
+        "ca": 0.000567122100808802,
+        "cp": 0.002452823198899959
+      },
+      "input_integral_m2": 0.005065959580733336,
+      "percent_of_input": {
+        "c": 7.407492283994435,
+        "ca": 11.194761659087435,
+        "cp": 48.417741196128816,
+        "stored": 67.01999513920781,
+        "degraded": 32.980004860581204,
+        "outlet": 9.917840188694345e-262
+      }
+    },
+    "exp_0.001": {
+      "phase_integrals_m2": {
+        "c": 0.0002629378128114472,
+        "ca": 0.00043064863001979794,
+        "cp": 0.001890408709677335
+      },
+      "input_integral_m2": 0.003823980244910644,
+      "percent_of_input": {
+        "c": 6.876024350842099,
+        "ca": 11.261790135891799,
+        "cp": 49.43562959545333,
+        "stored": 67.5734440821808,
+        "degraded": 32.42655591759457,
+        "outlet": 2.4112347232778827e-144
+      }
+    },
+    "exp_0.0005": {
+      "phase_integrals_m2": {
+        "c": 0.0002620943128125903,
+        "ca": 0.00042691850184025954,
+        "cp": 0.0018617281495900784
+      },
+      "input_integral_m2": 0.003747553635479253,
+      "percent_of_input": {
+        "c": 6.993744141011409,
+        "ca": 11.39192506275266,
+        "cp": 49.67849244276374,
+        "stored": 68.06416164653128,
+        "degraded": 31.93583835325457,
+        "outlet": 1.361870909951778e-144
+      }
+    }
+  },
+  "input_hashes": {
+    "constant_snapshots.npz": "33bd6a3b501271c40105f98a03b4945e0c195402f768d4895f1644f74bf90333",
+    "variable_snapshots.npz": "5521756d8f92d2588a459e5dd204ca55fe6553af750124f9894a5cfd1db85ba0",
+    "exp_0.001_snapshots.npz": "32a7d6a802cdab457a64b520e46918230160dfbd8879c3a13f3384f6129cf1f9",
+    "exp_0.0005_snapshots.npz": "4350eb1c5436fe412f2497a5fa6f45ee0410e7ba39ec9401a3fea71dc215ab19",
+    "mesh0_dt2/summary.json": "1cafab35960353c08cabd20fab02aeb0f0bda205bf2762db8d36eeb0c95e9020",
+    "mesh1_dt2/summary.json": "b68c8f56fd289376388a3511e38e67eae5b6b8b41806f1a4e7d508f1ae51b984",
+    "mesh2_dt2_t8/summary.json": "b9cf2c60e434129f3e9bab7059cdf35b898dba21f0b0ef60170ea59f6d9a9a0b",
+    "mesh2_dt4_t8/summary.json": "6f4d588a37d83d896e51f1a9224aa6b4ee2ed936455dd063abdc15e007e79700"
+  },
+  "mesh_comparison": {
+    "mesh0_dt2": {
+      "constant": 32.9756806205128,
+      "variable": 32.96056291425172,
+      "exp_0.001": 32.42523849418813,
+      "exp_0.0005": 31.933580455954903,
+      "variable_minus_constant_percentage_points": -0.015117706261079888
+    },
+    "mesh1_dt2": {
+      "constant": 32.975089260812496,
+      "variable": 32.97269820718061,
+      "exp_0.001": 32.42594058310298,
+      "exp_0.0005": 31.934899555379136,
+      "variable_minus_constant_percentage_points": -0.0023910536318823006
+    },
+    "mesh2_dt2_t8": {
+      "constant": 32.97502518580052,
+      "variable": 32.980004860581204,
+      "exp_0.001": 32.42655591759457,
+      "exp_0.0005": 31.93583835325457,
+      "variable_minus_constant_percentage_points": 0.004979674780685173
+    },
+    "mesh2_dt4_t8": {
+      "constant": 32.97477501432852,
+      "variable": 32.97977761605054,
+      "exp_0.001": 32.42621098556118,
+      "exp_0.0005": 31.935461553053305,
+      "variable_minus_constant_percentage_points": 0.005002601722019051
+    }
+  }
+}

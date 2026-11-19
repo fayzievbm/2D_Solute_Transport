@@ -1,0 +1,79 @@
+{
+  "domain128_dt2": {
+    "mass_residual_fraction": 1.269489092391995e-13,
+    "snapshot_inventory_error": 4.683753385137379e-17,
+    "darcy_velocity_error": 1.734723475976807e-18,
+    "inlet_width": 0.03999999999999959,
+    "maximum_saved_residual_over_current_input": 1.4675134580476624e-13,
+    "pressure_water_balance_fraction": 8.639589989203505e-09,
+    "pressure_bounds_pass": true,
+    "source_hashes_match": true,
+    "checks_passed": true
+  },
+  "mesh0_dt1": {
+    "mass_residual_fraction": 1.363856389900188e-13,
+    "snapshot_inventory_error": 3.0791341698588326e-17,
+    "darcy_velocity_error": 1.734723475976807e-18,
+    "inlet_width": 0.03999999999999959,
+    "maximum_saved_residual_over_current_input": 1.573488310924836e-13,
+    "pressure_water_balance_fraction": 7.711683070470621e-09,
+    "pressure_bounds_pass": true,
+    "source_hashes_match": true,
+    "checks_passed": true
+  },
+  "mesh0_dt2": {
+    "mass_residual_fraction": 1.200756147487995e-13,
+    "snapshot_inventory_error": 6.245004513516506e-17,
+    "darcy_velocity_error": 1.734723475976807e-18,
+    "inlet_width": 0.03999999999999959,
+    "maximum_saved_residual_over_current_input": 1.3391938806516767e-13,
+    "pressure_water_balance_fraction": 7.710407720455955e-09,
+    "pressure_bounds_pass": true,
+    "source_hashes_match": true,
+    "checks_passed": true
+  },
+  "mesh0_dt4": {
+    "mass_residual_fraction": 3.22961350198369e-13,
+    "snapshot_inventory_error": 5.551115123125783e-17,
+    "darcy_velocity_error": 1.734723475976807e-18,
+    "inlet_width": 0.03999999999999959,
+    "maximum_saved_residual_over_current_input": 3.256339536224436e-13,
+    "pressure_water_balance_fraction": 7.70757341636396e-09,
+    "pressure_bounds_pass": true,
+    "source_hashes_match": true,
+    "checks_passed": true
+  },
+  "mesh1_dt2": {
+    "mass_residual_fraction": 1.2192000562638e-12,
+    "snapshot_inventory_error": 9.93129189996722e-17,
+    "darcy_velocity_error": 3.469446951953614e-18,
+    "inlet_width": 0.03999999999999959,
+    "maximum_saved_residual_over_current_input": 1.234594402963733e-12,
+    "pressure_water_balance_fraction": 7.0025286173245636e-09,
+    "pressure_bounds_pass": true,
+    "source_hashes_match": true,
+    "checks_passed": true
+  },
+  "mesh2_dt2_t8": {
+    "mass_residual_fraction": 2.198845469037731e-12,
+    "snapshot_inventory_error": 2.458970527197124e-16,
+    "darcy_velocity_error": 6.938893903907228e-18,
+    "inlet_width": 0.03999999999999959,
+    "maximum_saved_residual_over_current_input": 2.452980549401459e-12,
+    "pressure_water_balance_fraction": 6.725977626649203e-09,
+    "pressure_bounds_pass": true,
+    "source_hashes_match": true,
+    "checks_passed": true
+  },
+  "mesh2_dt4_t8": {
+    "mass_residual_fraction": 2.063417723035464e-12,
+    "snapshot_inventory_error": 2.7972416050126014e-16,
+    "darcy_velocity_error": 6.938893903907228e-18,
+    "inlet_width": 0.03999999999999959,
+    "maximum_saved_residual_over_current_input": 2.3272353493393406e-12,
+    "pressure_water_balance_fraction": 3.055736700118746e-08,
+    "pressure_bounds_pass": true,
+    "source_hashes_match": true,
+    "checks_passed": true
+  }
+}

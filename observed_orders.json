@@ -1,0 +1,288 @@
+{
+  "mesh0_dt2__mesh1_dt2__mesh2_dt2_t8": {
+    "constant_inventory": {
+      "coarse_medium_fine": [
+        0.0025841382348552088,
+        0.0026067006917772076,
+        0.0026194930482544773
+      ],
+      "monotonic": true,
+      "observed_order": 0.8186421302493323,
+      "richardson_estimate": 0.0026362425571430817,
+      "fine_gci_fraction": 0.007992724441359709,
+      "interpretation": "Estimate conditional on asymptotic behaviour; not an independent proof of accuracy."
+    },
+    "constant_cumulative_in": {
+      "coarse_medium_fine": [
+        0.0038555232768936456,
+        0.0038891520526186415,
+        0.003908234289568052
+      ],
+      "monotonic": true,
+      "observed_order": 0.8174659539066096,
+      "richardson_estimate": 0.003933266482628616,
+      "fine_gci_fraction": 0.008006234787209583,
+      "interpretation": "Estimate conditional on asymptotic behaviour; not an independent proof of accuracy."
+    },
+    "constant_cumulative_degradation": {
+      "coarse_medium_fine": [
+        0.001271385042037978,
+        0.0012824513608397183,
+        0.0012887412413051572
+      ],
+      "monotonic": true,
+      "observed_order": 0.8150708859541616,
+      "richardson_estimate": 0.0012970241067969672,
+      "fine_gci_fraction": 0.008033871760227825,
+      "interpretation": "Estimate conditional on asymptotic behaviour; not an independent proof of accuracy."
+    },
+    "variable_inventory": {
+      "coarse_medium_fine": [
+        0.003310569382789464,
+        0.003365093538085929,
+        0.0033952058647617137
+      ],
+      "monotonic": true,
+      "observed_order": 0.8565413299552381,
+      "richardson_estimate": 0.0034323498342659488,
+      "fine_gci_fraction": 0.01367515365185445,
+      "interpretation": "Estimate conditional on asymptotic behaviour; not an independent proof of accuracy."
+    },
+    "variable_cumulative_in": {
+      "coarse_medium_fine": [
+        0.004938241618221244,
+        0.0050204818754205835,
+        0.005065959580733336
+      ],
+      "monotonic": true,
+      "observed_order": 0.8546853150330209,
+      "richardson_estimate": 0.005122218506579778,
+      "fine_gci_fraction": 0.013881606473037225,
+      "interpretation": "Estimate conditional on asymptotic behaviour; not an independent proof of accuracy."
+    },
+    "variable_cumulative_degradation": {
+      "coarse_medium_fine": [
+        0.001627672235431575,
+        0.0016553883373286303,
+        0.0016707537159609334
+      ],
+      "monotonic": true,
+      "observed_order": 0.8510410472341045,
+      "richardson_estimate": 0.0016898695892141077,
+      "fine_gci_fraction": 0.014301833560624313,
+      "interpretation": "Estimate conditional on asymptotic behaviour; not an independent proof of accuracy."
+    },
+    "exp_0.001_inventory": {
+      "coarse_medium_fine": [
+        0.0025488977791259066,
+        0.0025712984477398357,
+        0.0025839951525083345
+      ],
+      "monotonic": true,
+      "observed_order": 0.8190876778048755,
+      "richardson_estimate": 0.002600607571365844,
+      "fine_gci_fraction": 0.008036208408413433,
+      "interpretation": "Estimate conditional on asymptotic behaviour; not an independent proof of accuracy."
+    },
+    "exp_0.001_cumulative_in": {
+      "coarse_medium_fine": [
+        0.0037719671106897744,
+        0.0038051561056559133,
+        0.003823980244910644
+      ],
+      "monotonic": true,
+      "observed_order": 0.8181210438883536,
+      "richardson_estimate": 0.003848647963528944,
+      "fine_gci_fraction": 0.008063495702916578,
+      "interpretation": "Estimate conditional on asymptotic behaviour; not an independent proof of accuracy."
+    },
+    "exp_0.001_cumulative_degradation": {
+      "coarse_medium_fine": [
+        0.0012230693315634965,
+        0.0012338576579143015,
+        0.0012399850923937197
+      ],
+      "monotonic": true,
+      "observed_order": 0.8161160118303304,
+      "richardson_estimate": 0.0012480405149041744,
+      "fine_gci_fraction": 0.008120483221802368,
+      "interpretation": "Estimate conditional on asymptotic behaviour; not an independent proof of accuracy."
+    },
+    "exp_0.0005_inventory": {
+      "coarse_medium_fine": [
+        0.0025159468265109775,
+        0.002538155030211604,
+        0.002550740964243058
+      ],
+      "monotonic": true,
+      "observed_order": 0.8192804197137196,
+      "richardson_estimate": 0.0025672033728940656,
+      "fine_gci_fraction": 0.008067463965266407,
+      "interpretation": "Estimate conditional on asymptotic behaviour; not an independent proof of accuracy."
+    },
+    "exp_0.0005_cumulative_in": {
+      "coarse_medium_fine": [
+        0.003696311401958324,
+        0.003729010922827395,
+        0.003747553635479253
+      ],
+      "monotonic": true,
+      "observed_order": 0.8184171824863553,
+      "richardson_estimate": 0.0037718410445628427,
+      "fine_gci_fraction": 0.008101087884924942,
+      "interpretation": "Estimate conditional on asymptotic behaviour; not an independent proof of accuracy."
+    },
+    "exp_0.0005_cumulative_degradation": {
+      "coarse_medium_fine": [
+        0.001180364575446996,
+        0.0011908558926140452,
+        0.0011968126712281692
+      ],
+      "monotonic": true,
+      "observed_order": 0.8165915703012889,
+      "richardson_estimate": 0.001204637769866882,
+      "fine_gci_fraction": 0.008172852388296722,
+      "interpretation": "Estimate conditional on asymptotic behaviour; not an independent proof of accuracy."
+    }
+  },
+  "mesh0_dt4__mesh0_dt2__mesh0_dt1": {
+    "constant_inventory": {
+      "coarse_medium_fine": [
+        0.0025841493399245572,
+        0.0025841382348552088,
+        0.00258413292425809
+      ],
+      "monotonic": true,
+      "observed_order": 1.0642724116049993,
+      "richardson_estimate": 0.0025841280571294476,
+      "fine_gci_fraction": 2.354333535259044e-06,
+      "interpretation": "Estimate conditional on asymptotic behaviour; not an independent proof of accuracy."
+    },
+    "constant_cumulative_in": {
+      "coarse_medium_fine": [
+        0.003855523587574071,
+        0.0038555232768936456,
+        0.0038555236280701987
+      ],
+      "monotonic": false,
+      "interpretation": "No positive monotonic observed order; no GCI claimed."
+    },
+    "constant_cumulative_degradation": {
+      "coarse_medium_fine": [
+        0.0012713742476502345,
+        0.001271385042037978,
+        0.0012713907038116785
+      ],
+      "monotonic": true,
+      "observed_order": 0.9309554247807595,
+      "richardson_estimate": 0.0012713969493000723,
+      "fine_gci_fraction": 6.140410236507196e-06,
+      "interpretation": "Estimate conditional on asymptotic behaviour; not an independent proof of accuracy."
+    },
+    "variable_inventory": {
+      "coarse_medium_fine": [
+        0.0033105835877925336,
+        0.003310569382789464,
+        0.0033105628100149093
+      ],
+      "monotonic": true,
+      "observed_order": 1.1118247365359903,
+      "richardson_estimate": 0.003310557149628135,
+      "fine_gci_fraction": 2.1372448958688817e-06,
+      "interpretation": "Estimate conditional on asymptotic behaviour; not an independent proof of accuracy."
+    },
+    "variable_cumulative_in": {
+      "coarse_medium_fine": [
+        0.004938242284244176,
+        0.004938241618221244,
+        0.00493824236958728
+      ],
+      "monotonic": false,
+      "interpretation": "No positive monotonic observed order; no GCI claimed."
+    },
+    "variable_cumulative_degradation": {
+      "coarse_medium_fine": [
+        0.0016276586964532325,
+        0.001627672235431575,
+        0.0016276795595719584
+      ],
+      "monotonic": true,
+      "observed_order": 0.8863875276359473,
+      "richardson_estimate": 0.001627688191017011,
+      "fine_gci_fraction": 6.62864275239554e-06,
+      "interpretation": "Estimate conditional on asymptotic behaviour; not an independent proof of accuracy."
+    },
+    "exp_0.001_inventory": {
+      "coarse_medium_fine": [
+        0.0025489073583416224,
+        0.0025488977791259066,
+        0.002548892914132825
+      ],
+      "monotonic": true,
+      "observed_order": 0.9774697888873537,
+      "richardson_estimate": 0.00254888789354735,
+      "fine_gci_fraction": 2.4621402527559943e-06,
+      "interpretation": "Estimate conditional on asymptotic behaviour; not an independent proof of accuracy."
+    },
+    "exp_0.001_cumulative_in": {
+      "coarse_medium_fine": [
+        0.0037719635933977516,
+        0.0037719671106897744,
+        0.003771968635792082
+      ],
+      "monotonic": true,
+      "observed_order": 1.205559094204387,
+      "richardson_estimate": 0.0037719698033199687,
+      "fine_gci_fraction": 3.869093301985446e-07,
+      "interpretation": "Estimate conditional on asymptotic behaviour; not an independent proof of accuracy."
+    },
+    "exp_0.001_cumulative_degradation": {
+      "coarse_medium_fine": [
+        0.0012230562350568754,
+        0.0012230693315634965,
+        0.001223075721658875
+      ],
+      "monotonic": true,
+      "observed_order": 1.0352726666905694,
+      "richardson_estimate": 0.001223081810357803,
+      "fine_gci_fraction": 6.222733004460798e-06,
+      "interpretation": "Estimate conditional on asymptotic behaviour; not an independent proof of accuracy."
+    },
+    "exp_0.0005_inventory": {
+      "coarse_medium_fine": [
+        0.0025159558766983804,
+        0.0025159468265109775,
+        0.0025159421231442745
+      ],
+      "monotonic": true,
+      "observed_order": 0.9442538486406064,
+      "richardson_estimate": 0.0025159370339860434,
+      "fine_gci_fraction": 2.5284555357137135e-06,
+      "interpretation": "Estimate conditional on asymptotic behaviour; not an independent proof of accuracy."
+    },
+    "exp_0.0005_cumulative_in": {
+      "coarse_medium_fine": [
+        0.003696306757993575,
+        0.003696311401958324,
+        0.0036963132550217456
+      ],
+      "monotonic": true,
+      "observed_order": 1.3254447624967283,
+      "richardson_estimate": 0.0036963144853927408,
+      "fine_gci_fraction": 4.160804666187294e-07,
+      "interpretation": "Estimate conditional on asymptotic behaviour; not an independent proof of accuracy."
+    },
+    "exp_0.0005_cumulative_degradation": {
+      "coarse_medium_fine": [
+        0.0011803508812958537,
+        0.001180364575446996,
+        0.0011803711318770557
+      ],
+      "monotonic": true,
+      "observed_order": 1.062577446470331,
+      "richardson_estimate": 0.0011803771543560276,
+      "fine_gci_fraction": 6.377738756577484e-06,
+      "interpretation": "Estimate conditional on asymptotic behaviour; not an independent proof of accuracy."
+    }
+  }
+}
